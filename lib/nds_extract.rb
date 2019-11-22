@@ -15,8 +15,10 @@ def directors_totals(nds)
   while count < nds.length do
     innerCount = 0 
      total = 0
+     eachTotal = []
     while innerCount < nds[count].length do
       total += nds[count][:movies][innerCount][:worldwide_gross]
+      eachTotal << total
       # result[nds[count][:name]] = total
       innerCount += 1
       # p "#{nds[count][:movies][innerCount][:worldwide_gross]} line 20"
@@ -33,7 +35,8 @@ def directors_totals(nds)
   #
   # Be sure to return the result at the end!
   nil
-  pp result[count] = total
+  # pp result[count] = total
+  pp eachTotal
 end
 
 # {:name=>"Spike Lee",
