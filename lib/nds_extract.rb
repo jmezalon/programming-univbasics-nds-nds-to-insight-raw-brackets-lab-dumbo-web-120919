@@ -11,7 +11,7 @@ def directors_totals(nds)
   result = {
   }
   
-  # nds.each { | i | result[i.name] = i.
+  nds.each { | i | result[i[:name]] = i[:gross]
   #
   # Use loops, variables and the accessing method, [], to loop through the NDS
   # and total up all the
@@ -22,4 +22,5 @@ def directors_totals(nds)
   #
   # Be sure to return the result at the end!
   nil
+  pp result
 end
