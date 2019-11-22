@@ -13,7 +13,8 @@ def directors_totals(nds)
   
   count = 0 
   while count < nds.length do
-    result[nds[count][:name]]= nds[count][:worldwide_gross]
+    result[nds[count][:name]] = nds[count][:worldwide_gross]
+    p nds[count][:worldwide_gross] + "line 17"
     count += 1
   end
   #
