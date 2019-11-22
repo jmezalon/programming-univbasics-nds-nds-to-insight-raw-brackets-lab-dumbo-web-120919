@@ -11,7 +11,11 @@ def directors_totals(nds)
   result = {
   }
   
-  nds.each { | i | pp result[i[:name]] }
+  count = 0 
+  while count < nds.length do
+    result[nds[:name]]= nds[:worldwide_gross]
+    count += 1
+  end
   #
   # Use loops, variables and the accessing method, [], to loop through the NDS
   # and total up all the
