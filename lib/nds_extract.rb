@@ -6,12 +6,12 @@ def directors_totals(nds)
   # that you know what you're starting with!
   #
   #
-  # pp nds
+  pp nds
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
   result = {
   }
   
-  nds.each { | i | result[i[:name]] = i[:gross] }
+  # nds.each { | i | result[i[:name]] = i[:gross] }
   #
   # Use loops, variables and the accessing method, [], to loop through the NDS
   # and total up all the
