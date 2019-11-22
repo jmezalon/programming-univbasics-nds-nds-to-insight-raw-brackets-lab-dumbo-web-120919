@@ -13,7 +13,7 @@ def directors_totals(nds)
   
   count = 0 
   while count < nds.length do
-    result[nds[count][:name]]= nds[count][:worldwide]
+    result[nds[count][:name]]= nds[count][:worldwide_gross]
     count += 1
   end
   #
