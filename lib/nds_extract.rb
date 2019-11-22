@@ -17,16 +17,17 @@ def directors_totals(nds)
     innerCount = 0 
      total = 0
      eachTotal = []
-    while innerCount < nds[count].length do
+    while innerCount < nds[count][:movies].length do
       total += nds[count][:movies][innerCount][:worldwide_gross]
       # eachTotal << total
       result[nds[count][:name]] = total
+          total = 0
+
       innerCount += 1
       # puts "#{nds[0][:movies][innerCount][:worldwide_gross]} line #{innerCount}"
     end
   
     count += 1
-    total = 0
   end
   
   # Use loops, variables and the accessing method, [], to loop through the NDS
