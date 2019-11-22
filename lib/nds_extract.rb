@@ -24,8 +24,9 @@ def directors_totals(nds)
       innerCount += 1
       # puts "#{nds[0][:movies][innerCount][:worldwide_gross]} line #{innerCount}"
     end
-    total = 0
+  
     count += 1
+    total = 0
   end
   
   # Use loops, variables and the accessing method, [], to loop through the NDS
