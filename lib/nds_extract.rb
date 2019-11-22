@@ -19,7 +19,7 @@ def directors_totals(nds)
      eachTotal = []
     while innerCount < nds[count].length do
       total += nds[count][:movies][innerCount][:worldwide_gross]
-      eachTotal << total
+      # eachTotal << total
       result[nds[count][:name]] = total
       innerCount += 1
       puts "#{nds[0][:movies][innerCount][:worldwide_gross]} line #{innerCount}"
