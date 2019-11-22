@@ -14,7 +14,7 @@ def directors_totals(nds)
   count = 0 
   while count < nds.length do
     result[nds[count][:name]] = nds[count][:worldwide_gross]
-    p "#{nds[count][:name]} line 17"
+    p "#{nds[count][:values]} line 17"
     count += 1
   end
   #
