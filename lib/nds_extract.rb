@@ -6,7 +6,7 @@ def directors_totals(nds)
   # that you know what you're starting with!
   #
   #
-  # pp nds[0][:movies]
+  pp nds[0][:movies][:worldwide_gross].class
   # pp nds.length
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
   result = {
