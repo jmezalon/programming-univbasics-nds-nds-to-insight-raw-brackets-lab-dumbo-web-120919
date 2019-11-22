@@ -36,8 +36,8 @@ def directors_totals(nds)
   #
   # Be sure to return the result at the end!
   nil
-  # pp result[count] = total
-  pp eachTotal
+  pp result[count] = eachTotal
+  # pp eachTotal
 end
 
 # {:name=>"Spike Lee",
