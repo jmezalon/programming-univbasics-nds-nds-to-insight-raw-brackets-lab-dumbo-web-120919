@@ -17,7 +17,7 @@ def directors_totals(nds)
     while innerCount < nds[count].length do
       result[nds[count][:name]] = nds[count][innerCount][:worldwide_gross]
       innerCount += 1
-      p nds[count][innerCount][:worldwide_gross]
+      p nds[count][:movies][:worldwide_gross]
     end
     count += 1
   end
