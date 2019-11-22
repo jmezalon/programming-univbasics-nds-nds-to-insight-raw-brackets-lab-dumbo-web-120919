@@ -6,7 +6,7 @@ def directors_totals(nds)
   # that you know what you're starting with!
   #
   #
-  pp nds[0][:movies][0][:worldwide_gross].class
+  # pp nds[0][:movies][0][:worldwide_gross].class
   # pp nds.length
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
   result = {
@@ -21,10 +21,10 @@ def directors_totals(nds)
       total += nds[count][:movies][innerCount][:worldwide_gross]
       # eachTotal << total
       result[nds[count][:name]] = total
-      total = 0
       innerCount += 1
-      puts "#{nds[0][:movies][innerCount][:worldwide_gross]} line #{innerCount}"
+      # puts "#{nds[0][:movies][innerCount][:worldwide_gross]} line #{innerCount}"
     end
+    total = 0
     count += 1
   end
   
